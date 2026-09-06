@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelogs>
+    <changelog>
+        <element>pkg_devartliveblog</element>
+        <type>package</type>
+        <version>1.1.0</version>
+
+        <addition>
+            <item>Administrator dashboard hub with live-blog cards, stats and workflow guidance</item>
+            <item>Live Console for publish/edit/unpublish/pin/delete with concurrent editor sync</item>
+            <item>Console load-earlier pagination for high-volume sports and news coverage</item>
+            <item>Dedicated media upload/browse under /images with CSRF and item ACL</item>
+            <item>editors-xtd button to insert {devartliveblog id=N} from the article editor</item>
+            <item>Content plugin shortcode rendering inside Joomla articles (SSR-friendly)</item>
+            <item>Static CDN-friendly JSON feeds under media/com_devartliveblog/feeds/ with optional Cloudflare purge</item>
+            <item>Language-aware static feeds and ETags for multilingual sites</item>
+            <item>End &amp; Convert workflow to self-contained archive HTML in the linked article</item>
+            <item>Scheduled task plugin to purge soft-trashed posts after a configurable retention window</item>
+            <item>Administrator headers for dashboard and liveblogs list (centered, responsive)</item>
+            <item>Multilingual packs across 15 locales</item>
+            <item>GitHub package update metadata targeting pkg_devartliveblog (site client)</item>
+        </addition>
+
+        <fix>
+            <item>Go Live status race with console background sync</item>
+            <item>JED Checker update-server requirement and JAMSS YouTube embed false positives</item>
+            <item>Uninstall removes published static feed files when keep_data_on_uninstall is disabled</item>
+            <item>JSON_THROW_ON_ERROR on feed, Cloudflare purge and installer JSON paths</item>
+            <item>Administrator list language messages for delete/trash/publish/check-in/save</item>
+        </fix>
+
+        <change>
+            <item>First public release for Joomla 6 / PHP 8.3+</item>
+            <item>Package inventory includes content, editors-xtd and task plugins enabled on install/update</item>
+        </change>
+
+        <note>
+            <item>Install or update using the full pkg_devartliveblog package only</item>
+            <item>Designed for high traffic and Cloudflare Full Page Cache (static feed mode)</item>
+            <item>Requires Joomla 6.0+ and PHP 8.3.0+</item>
+            <item>Optional: create System → Scheduled Tasks → DevArt Liveblog – Purge trashed posts</item>
+            <item>Publish this ZIP as GitHub release v1.1.0 so the update server download URL resolves</item>
+        </note>
+    </changelog>
+</changelogs>

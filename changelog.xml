@@ -3,6 +3,28 @@
     <changelog>
         <element>pkg_devartliveblog</element>
         <type>package</type>
+        <version>1.1.1</version>
+
+        <addition>
+            <item>Unified video embed field for YouTube and Glomex in the Live Console</item>
+            <item>Optional site-wide Glomex Integration ID in component Options</item>
+        </addition>
+
+        <change>
+            <item>PostHtmlHelper builds allowlisted responsive embeds for YouTube and Glomex (including playlist-only Glomex ids with the default Integration ID)</item>
+            <item>Site, admin console and archive CSS treat Glomex embeds like YouTube (16:9)</item>
+        </change>
+
+        <note>
+            <item>Install or update using the full pkg_devartliveblog package only</item>
+            <item>Requires Joomla 6.0+ and PHP 8.3.0+</item>
+            <item>Set Components → DevArt Liveblog → Options → Glomex Integration ID when pasting playlist ids only</item>
+        </note>
+    </changelog>
+
+    <changelog>
+        <element>pkg_devartliveblog</element>
+        <type>package</type>
         <version>1.1.0</version>
 
         <addition>

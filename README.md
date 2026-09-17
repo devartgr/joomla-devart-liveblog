@@ -6,7 +6,7 @@ one-click conversion to a regular article.
 
 ![Joomla](https://img.shields.io/badge/Joomla-6.x-blue)
 ![PHP](https://img.shields.io/badge/PHP-8.3%2B-green)
-![Release](https://img.shields.io/badge/Version-1.1.0-orange)
+![Release](https://img.shields.io/badge/Version-1.1.1-orange)
 ![License](https://img.shields.io/badge/License-GPLv3-red)
 
 ---
@@ -60,6 +60,7 @@ longer needed.
 - Live blogs list with status badges and console access
 - Centered responsive admin headers
 - Soft-deleted post retention option + scheduled purge task plugin
+- Unified YouTube + Glomex video embed field
 - 15 language packs
 
 ---
@@ -86,7 +87,7 @@ Plugins are enabled on install/update.
 
 ## Installation
 
-1. Download the latest release ZIP (`pkg_devartliveblog_v1.1.0.zip`)
+1. Download the latest release ZIP (`pkg_devartliveblog_v1.1.1.zip`)
 2. Open:
 
 ```text
@@ -166,9 +167,21 @@ Not supported:
 
 ## Current Version
 
-**1.1.0** — first public release
+**1.1.1** — YouTube + Glomex video embed
 
 ---
+
+## Changelog Highlights (1.1.1)
+
+### Added
+
+- Unified video embed field for YouTube and Glomex in the Live Console
+- Optional site-wide Glomex Integration ID in component Options
+
+### Changed
+
+- Allowlisted responsive embeds for YouTube and Glomex (playlist-only Glomex ids use the default Integration ID)
+- Site, admin console and archive CSS treat Glomex embeds like YouTube (16:9)
 
 ## Changelog Highlights (1.1.0)
 

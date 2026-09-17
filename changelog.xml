@@ -3,6 +3,27 @@
     <changelog>
         <element>pkg_devartliveblog</element>
         <type>package</type>
+        <version>1.1.2</version>
+
+        <fix>
+            <item>Accept real Glomex alphanumeric video ids (e.g. v-dlhhdq6zhtg1) and exchange.glomex.com share URLs</item>
+            <item>Use Glomex’s official web component embed (hydrated on site and console) instead of iframe-only playback</item>
+        </fix>
+
+        <change>
+            <item>Archive conversion expands Glomex placeholders to a self-contained script + glomex-integration block</item>
+        </change>
+
+        <note>
+            <item>Paste the Glomex Exchange URL or the official embed snippet into the Video embed field</item>
+            <item>Re-save existing Glomex posts after update so the new embed markup is written</item>
+            <item>Install or update using the full pkg_devartliveblog package only</item>
+        </note>
+    </changelog>
+
+    <changelog>
+        <element>pkg_devartliveblog</element>
+        <type>package</type>
         <version>1.1.1</version>
 
         <addition>

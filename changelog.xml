@@ -3,6 +3,29 @@
     <changelog>
         <element>pkg_devartliveblog</element>
         <type>package</type>
+        <version>1.1.3</version>
+
+        <addition>
+            <item>Rebuild archive button on converted live blogs to regenerate article timeline HTML from stored posts</item>
+        </addition>
+
+        <fix>
+            <item>Rebuild archive removes every existing archive block before writing one fresh copy (no duplicate timelines)</item>
+        </fix>
+
+        <change>
+            <item>Archive section marked non-editable for TinyMCE (contenteditable=false / mceNonEditable) so editors can change intro text without breaking the timeline</item>
+        </change>
+
+        <note>
+            <item>After Convert, use Rebuild archive if an article save damaged the live blog appearance</item>
+            <item>Install or update using the full pkg_devartliveblog package only</item>
+        </note>
+    </changelog>
+
+    <changelog>
+        <element>pkg_devartliveblog</element>
+        <type>package</type>
         <version>1.1.2</version>
 
         <fix>

@@ -6,7 +6,7 @@ one-click conversion to a regular article.
 
 ![Joomla](https://img.shields.io/badge/Joomla-6.x-blue)
 ![PHP](https://img.shields.io/badge/PHP-8.3%2B-green)
-![Release](https://img.shields.io/badge/Version-1.1.2-orange)
+![Release](https://img.shields.io/badge/Version-1.1.3-orange)
 ![License](https://img.shields.io/badge/License-GPLv3-red)
 
 ---
@@ -87,7 +87,7 @@ Plugins are enabled on install/update.
 
 ## Installation
 
-1. Download the latest release ZIP (`pkg_devartliveblog_v1.1.2.zip`)
+1. Download the latest release ZIP (`pkg_devartliveblog_v1.1.3.zip`)
 2. Open:
 
 ```text
@@ -167,11 +167,26 @@ Not supported:
 
 ## Current Version
 
-**1.1.2** — Glomex web component embed fix
+**1.1.3** — Rebuild archive for converted live blogs
 
 ---
 
+## Changelog Highlights (1.1.3)
+
+### Added
+
+- Rebuild archive button for converted live blogs (regenerate article timeline HTML from stored posts)
+
+### Fixed
+
+- Rebuild removes every existing archive block before writing one fresh copy (no duplicate timelines)
+
+### Changed
+
+- Archive section marked non-editable for TinyMCE so intro edits are safer
+
 ## Changelog Highlights (1.1.2)
+
 
 ### Fixed
 

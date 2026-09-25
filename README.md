@@ -6,7 +6,7 @@ one-click conversion to a regular article.
 
 ![Joomla](https://img.shields.io/badge/Joomla-6.x-blue)
 ![PHP](https://img.shields.io/badge/PHP-8.3%2B-green)
-![Release](https://img.shields.io/badge/Version-1.1.3-orange)
+![Release](https://img.shields.io/badge/Version-1.1.4-orange)
 ![License](https://img.shields.io/badge/License-GPLv3-red)
 
 ---
@@ -87,7 +87,7 @@ Plugins are enabled on install/update.
 
 ## Installation
 
-1. Download the latest release ZIP (`pkg_devartliveblog_v1.1.3.zip`)
+1. Download the latest release ZIP (`pkg_devartliveblog_v1.1.4.zip`)
 2. Open:
 
 ```text
@@ -167,9 +167,19 @@ Not supported:
 
 ## Current Version
 
-**1.1.3** — Rebuild archive for converted live blogs
+**1.1.4** — Joomla 7/8 API readiness (createQuery, setLimit, Table exceptions, Http/LanguageFactory)
 
 ---
+
+## Changelog Highlights (1.1.4)
+
+### Fixed
+
+- Deprecated `getQuery(true)` → `createQuery()`; query limits via `setLimit()`
+- Table validation throws `UnexpectedValueException` instead of `setError`/`getError`
+- Cloudflare purge uses `Joomla\Http\HttpFactory` and PSR-7 `getBody()`
+- Language switching via `LanguageFactoryInterface`; task installer uses `DatabaseInterface`
+- Remove deprecated `setUseExceptions()` from the article selection modal
 
 ## Changelog Highlights (1.1.3)
 
